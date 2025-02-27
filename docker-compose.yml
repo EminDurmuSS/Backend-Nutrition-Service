@@ -1,0 +1,8 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      - ENV=production
+    restart: on-failure

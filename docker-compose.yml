@@ -1,8 +1,10 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: .
       dockerfile: Dockerfile
     environment:
       - ENV=production
+    ports:
+      - "5000:5000"
     restart: on-failure
